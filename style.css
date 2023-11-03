@@ -192,6 +192,7 @@ input[type="submit"]:hover{
 #slider{
     margin:0 auto;
     width:80%;
+    height: fit-content;
     overflow:hidden;
   }
   
@@ -200,6 +201,10 @@ input[type="submit"]:hover{
     animation-name:fade;
     animation-duration:1s;
     display:none;
+    width: 100vw;
+    height: 20%;
+    object-fit: fill;
+    object-position: 50%;
   }
   
   img{
