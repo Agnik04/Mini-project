@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css" />
     <title>Resume Builder</title>
 </head>
-<body>
 
+<body>
     <!-- Navbar -->
 
     <nav>
@@ -23,11 +25,12 @@
                 <a href="#">FAQ</a>
             </div>
             <div class="nav-buttons">
-                <button  class="buttonClass"><a href="/login.html">Login</a></button>
-                <button  class="buttonClass"><a href="/signup.html">SignUp</a></button>
+                <button class="buttonClass"><a href="/login.html">Login</a></button>
+                <button class="buttonClass"><a href="/signup.html">SignUp</a></button>
             </div>
-        </div>  
+        </div>
     </nav>
+
 
 
     <!-- Body-Hero-Section -->
@@ -35,44 +38,36 @@
     <div class="body-hero">
         <div class="body-content">
             <h4>ONLINE RESUME BUILDER</h4>
-            <h1>Only 2% of resumes make it past the first round. Be in the top 2%</h1>
+            <h1>
+                Only 2% of resumes make it past the first round. Be in the top 2%
+            </h1>
         </div>
-        
     </div>
+
+
+    
 
     <!-- Image Slider -->
 
-    <main>
-        <div class="controls">
-          <button id="prevButton">Prev</button>
-          <button id="nextButton">Next</button>
-        </div>
-        
-        <div class="slides-container">
-          <div class="slides-inner">
-            <div class="slide">1</div>
-            <div class="slide">2</div>
-            <div class="slide">3</div>
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+                <img src="/assets/Professional Modern CV Resume.png" alt="" srcset="">
+          </div>
+          <div class="swiper-slide">
+            <img src="/assets/Professional Modern CV Resume (1).png" alt="" srcset="">
           </div>
         </div>
-        
-      </main>
-  
-  
- 
-  
- 
-  
-  <div id="dot"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
- </div>
-
-
-
-
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
 
 
 
     <!-- Javascript File -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
+
 </html>

@@ -1,29 +1,17 @@
-var index = 0;
-var slides = document.querySelectorAll(".slides");
-var dot = document.querySelectorAll(".dot");
-
-function changeSlide(){
-
-  if(index<0){
-    index = slides.length-1;
-  }
-  
-  if(index>slides.length-1){
-    index = 0;
-  }
-  
-  for(let i=0;i<slides.length;i++){
-    slides[i].style.display = "none";
-    dot[i].classList.remove("active");
-  }
-  
-  slides[index].style.display= "block";
-  dot[index].classList.add("active");
-  
-  index++;
-  
-  setTimeout(changeSlide,4000);
-  
-}
-
-changeSlide();
+var swiper = new Swiper(".mySwiper", {
+  spaceBetween: 30,
+  centeredSlides: true,
+  autoplay: {
+    delay: 3500,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  grabCursor:"true",
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
