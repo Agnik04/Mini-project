@@ -1,201 +1,249 @@
 /* Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@300;400;500;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap");
 
-
- /* Font-Family
+/* Font-Family
  font-family: 'Playpen Sans', cursive;
  font-family: 'Montserrat', sans-serif; */
 
-.navbar{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+ /* Backdrop-filter */
+ /* -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 1px 12px rgba(0, 0, 0, 0.25); */
+
+
+body {
+  background-image: url("/assets/imac-2023-orange-1920x1080-13245.jpg");
 }
 
-.navbar a{
-    text-decoration: none;
-    color: rgba(53, 53, 53, 0.937);
+.navbar {
+  height: 10vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 1px 12px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
 }
 
-.logo{
-    flex: 2; 
-    font-family: 'Playpen Sans', cursive;
-    font-weight: 600;
-    font-size: 20px;
+.navbar a {
+  text-decoration: none;
+  color: rgba(53, 53, 53, 0.937);
 }
 
-.nav-content a{
-    padding-left: 10px;
-    font-family: 'Montserrat', sans-serif;
+.logo {
+  flex: 2;
+  font-family: "Playpen Sans", cursive;
+  font-weight: 600;
+  font-size: 20px;
+  padding-left: 5px;
 }
 
-.nav-buttons{
-    padding-left: 10px;
+.nav-content a {
+  padding-left: 10px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.nav-buttons {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 3px;
 }
 
 .buttonClass {
-    color: #fff;
-    font-weight: bold;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    position: relative;
-    display: inline-block;
-    outline: none;
-    border-radius: 5px;
-    border: none;
-    background-size: 120% auto;
-    background-image: linear-gradient(315deg, #74e130 0%, #74b5ee 75%);
-  }
-  .buttonClass:hover {
-    background-position: right center;
-  }
-  .buttonClass:active {
-    top: 2px;
-  }
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  background-size: 120% auto;
+  background-image: linear-gradient(315deg, #74e130 0%, #74b5ee 75%);
+}
 
-.login-body{
-    font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
-    text-align: center;
+.buttonClass:hover {
+  background-position: right center;
+}
+
+.buttonClass:active {
+  top: 2px;
+}
+
+.login-body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  text-align: center;
 }
 
 .login-container {
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
-    width: 300px;
-    margin: 0 auto;
-    padding: 20px;
-    margin-top: 150px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  margin-top: 150px;
 }
 
 .login-container h2 {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .login-container input[type="text"],
 .login-container input[type="password"] {
-    width: 80%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 3px;
+  width: 80%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 3px;
 }
 
 .login-container input[type="submit"] {
-    width: 40%;
-    padding: 10px;
-    background-color: #007BFF;
-    color: #fff;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
+  width: 40%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
 }
 
 .login-container input[type="submit"]:hover {
-    background-color: #0056b3;
+  background-color: #0056b3;
 }
 
-.signup-body{
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
+.signup-body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
 }
 
-.container{
-    max-width: 300px;
-    margin: 0 auto;
-    margin-top: 100px;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.container {
+  max-width: 300px;
+  margin: 0 auto;
+  margin-top: 100px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.container h2{
-    text-align: center;
+.container h2 {
+  text-align: center;
 }
 
-.form-group{
-    margin-bottom: 20px;
+.form-group {
+  margin-bottom: 20px;
 }
 
-.container label{
-    display: block;
-    font-weight: bold;
+.container label {
+  display: block;
+  font-weight: bold;
 }
 
 input[type="text"],
 input[type="email"],
-input[type="password"]{
-    width: 90%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+input[type="password"] {
+  width: 90%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
-input[type="submit"]{
-    width: 40%;
-    background-color: #007BFF;
-    color: #fff;
-    border: none;
-    padding: 10px;
-    border-radius: 3px;
-    cursor: pointer;
+input[type="submit"] {
+  width: 40%;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 3px;
+  cursor: pointer;
 }
 
-input[type="submit"]:hover{
-    background-color: #0056b3;
+input[type="submit"]:hover {
+  background-color: #0056b3;
 }
 
-.text-center{
-    text-align: center;
+.text-center {
+  text-align: center;
 }
 
-.body-hero{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 1%;
-    width: 100%;
+.body-hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1%;
+  width: 100%;
 }
 
-.body-content{
-    display: flexbox;
-    flex-direction: column;
-    padding-left: 27%;
-    padding-right:30%;
-    height: auto;
+.body-content {
+  display: flexbox;
+  flex-direction: column;
+  padding-left: 27%;
+  padding-right: 30%;
+  height: auto;
 }
 
-.body-content h4{
+.body-content h4 {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-left: 34%;
+  font-family: "Playpen Sans", cursive;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 720px) {
+  .body-content h4 {
+    margin-left: 5%;
     width: -moz-fit-content;
     width: fit-content;
-    margin-left: 34%;
-    font-family: 'Playpen Sans', cursive;
-    font-size: 16px;
-    font-weight: 500;
+  }
 }
 
-@media screen and (max-width: 720px){
-    .body-content h4{
-        margin-left: 5%;
-        width: -moz-fit-content;
-        width: fit-content; 
-    }
-    
+@media screen and (max-width: 1024px) {
+  .nav-content {
+    display: none;
+  }
 }
-
-@media screen and (max-width: 1024px){
-    .nav-content{
-        display: none;
-    }
-}
-
 
 .swiper {
+  padding-top: 30px;
+  width: 55%;
+  height: 60vh;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 1px 12px rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+
+
+@media screen and (max-width: 720px) {
+  .swiper {
     padding-top: 30px;
     width: 100%;
     height: 40vh;
@@ -204,7 +252,6 @@ input[type="submit"]:hover{
   .swiper-slide {
     text-align: center;
     font-size: 18px;
-    background: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -216,11 +263,4 @@ input[type="submit"]:hover{
     height: 100%;
     object-fit: contain;
   }
-
-  .swiper-button-next{
-    margin-right: 30%;
-  }
-
-  .swiper-button-prev{
-    margin-left: 30%;
-  }
+}
