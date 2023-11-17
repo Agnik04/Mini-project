@@ -1,52 +1,236 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/Css/page.css">
-</head>
-<body>
-    <header>
-        <h2>Personal Info</h2>
-        <hr> 
-    </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Info</title>
+    <link rel="stylesheet" href="/Css/page.css" />
+  </head>
+  <body>
     <main>
-        <form class="userData">
-            
-            <div class="personalInfo">
-                
-            <label for="NAME">Name</label>
-            <input type="text" id="NAME">
-            
-            
-            <label for="Photo">Upload Photo</label>
-            <input type="file" id="Photo">
-        
-
-            <label for="Email">Email</label>
-            <input type="text" id="Email">
-
-
-            <label for="DOB">Date Of Birth</label>
-            <input type="date" id="DOB">
-            
-            <label for="Add">Address</label>
-            <input type="text" id="Add">
-
-            <label for="Country">Country Name</label>
-            <input type="text" id="Country">
-
-            <label for="CITY">City</label>
-            <input type="text" id="CITY">
-
-
-            <label for="Ph_number">Phone Number</label>
-            <input type="text" id="Ph_number">
+      <header>
+        <h2>User data</h2>
+      </header>
+      <form class="userData">
+        <div>
+          <h3>Personal Info</h3>
+          <hr />
+        </div>
+        <div class="personalInfo">
+          <div class="info1">
+            <div>
+              <label for="NAME">Name</label>
+              <input type="text" id="NAME" />
             </div>
-        </form>
+            <div>
+              <label for="Photo">Upload Photo</label>
+              <input type="file" id="Photo" />
+            </div>
+            <div>
+              <label for="Email">Email</label>
+              <input type="text" id="Email" />
+            </div>
+            <div>
+              <label for="DOB">Date Of Birth</label>
+              <input type="date" id="DOB" />
+            </div>
+          </div>
+
+          <div class="info2">
+            <div>
+              <label for="Add">Address</label>
+              <input type="text" id="Add" />
+            </div>
+            <div>
+              <label for="Country">Country Name</label>
+              <input type="text" id="Country" />
+            </div>
+            <div>
+              <label for="CITY">City</label>
+              <input type="text" id="CITY" />
+            </div>
+            <div>
+              <label for="Ph_number">Phone Number</label>
+              <input type="text" id="Ph_number" />
+            </div>
+          </div>
+        </div>
+        <!-- <div id="Education">
+                <h3>Educational Details</h3>
+                <hr>
+                
+                <label for="ins_1">Enter the institution name</label>
+                <input type="text" id='ins_1'>
+                <label for="degree_1">Degree</label>
+                    <select id="degree_1">
+                        <option value="">--------------------select--------------------</option>
+                        <option value="Bachelor's degree">Bachelor's Degree</option>
+                        <option value="Master's degree">Master's Degree</option>
+                        <option value="Doctorate or professional doctorate">Doctorate or Professional Doctorate</option>
+                        <option value="Doctorate or equivalent">Doctorate or Equivalent</option>   
+                    </select>
+                <label for="year1">Year of completion</label>
+                <input type="month" id='year1'>
+
+                <label for="ins_2">Enter the institution name</label>
+                <input type="text" id='ins_2'>
+                <label for="degree_2">Degree</label>
+                    <select id="degree_2">
+                        <option value="">--------------------select--------------------</option>
+                        <option value="Bachelor's degree">Bachelor's Degree</option>
+                        <option value="Master's degree">Master's Degree</option>
+                        <option value="Doctorate or professional doctorate">Doctorate or Professional Doctorate</option>
+                        <option value="Doctorate or equivalent">Doctorate or Equivalent</option>   
+                    </select>
+                <label for="year2">Year of completion</label>
+                <input type="month" id='year2'>
+                
+                <label for="ins_3">Enter the institution name</label>
+                <input type="text" id='ins_3'>
+                <label for="degree_3">Degree</label>
+                    <select id="degree_3">
+                        <option value="">--------------------select--------------------</option>
+                        <option value="Bachelor's degree">Bachelor's Degree</option>
+                        <option value="Master's degree">Master's Degree</option>
+                        <option value="Doctorate or professional doctorate">Doctorate or Professional Doctorate</option>
+                        <option value="Doctorate or equivalent">Doctorate or Equivalent</option>   
+                    </select>
+                <label for="year3">Year of completion</label>
+                <input type="month" id='year3'> 
+            </div>
+            
+            <div id="workExperience">
+                <h3>Work Experience</h3>
+                <hr>
+                
+            </div>
+
+            <div id="skill_names">
+                <h3>Skills</h3>
+                <hr>
+                <div id='Technical Languages'>
+                    <h4>Languages</h4>
+                        <label for="C++">C++</label>
+                        <input type="checkbox" name="skills" id="C++">
+
+                        <label for="C">C</label>
+                        <input type="checkbox" name="skills" id="C">
+
+                        <label for="Java">Java</label>
+                        <input type="checkbox" name="skills" id="Java">
+
+                        <label for="Python">Python</label>
+                        <input type="checkbox" name="skills" id="Python">
+
+                        <label for="Html">Html</label>
+                        <input type="checkbox" name="skills" id="Html">
+
+                        <label for="Css">Css</label>
+                        <input type="checkbox" name="skills" id="Css">
+
+                        <label for="Js">JavaScript</label>
+                        <input type="checkbox" name="skills" id="Js">
+
+                        <label for="C#">C#</label>
+                        <input type="checkbox" name="skills" id="C#">
+
+                        <label for="Kotlin">Kotlin</label>
+                        <input type="checkbox" name="skills" id="Kotlin">
+
+                        <label for="Dart">Dart</label>
+                        <input type="checkbox" name="skills" id="Dart">
+
+                    <h4>Frameworks/Libraries</h4>
+                        <label for="React.Js">React.Js</label>
+                        <input type="checkbox" name="skills" id="React.Js">
+
+                        <label for="BootStrap">BootStrap.Js</label>
+                        <input type="checkbox" name="skills" id="BootStrap">
+
+                        <label for="Numpy">Numpy</label>
+                        <input type="checkbox" name="skills" id="Numpy">
+
+                        <label for="Pandas">Pandas</label>
+                        <input type="checkbox" name="skills" id="Pandas">
+
+                        <label for="TailWind">TailWind</label>
+                        <input type="checkbox" name="skills" id="TailWind">
+
+                        <label for="TensorFlow">TensorFlow</label>
+                        <input type="checkbox" name="skills" id="TensorFlow">
+
+                        <label for="TensorFlow">TensorFlow</label>
+                        <input type="checkbox" name="skills" id="TensorFlow">
+
+                        <label for="TensorFlow">TensorFlow</label>
+                        <input type="checkbox" name="skills" id="TensorFlow">
+                        
+                        <label for="TensorFlow">TensorFlow</label>
+                        <input type="checkbox" name="skills" id="TensorFlow">
+
+                        <label for="TensorFlow">TensorFlow</label>
+                        <input type="checkbox" name="skills" id="TensorFlow">
+
+                        <label for="TensorFlow">TensorFlow</label>
+                        <input type="checkbox" name="skills" id="TensorFlow">
+
+                        <label for="TensorFlow">TensorFlow</label>
+                        <input type="checkbox" name="skills" id="TensorFlow">
+
+                        <label for="TensorFlow">TensorFlow</label>
+                        <input type="checkbox" name="skills" id="TensorFlow">
+
+                        <label for="TensorFlow">TensorFlow</label>
+                        <input type="checkbox" name="skills" id="TensorFlow">
+
+                        <label for="TensorFlow">TensorFlow</label>
+                        <input type="checkbox" name="skills" id="TensorFlow">
+
+                        <label for="TensorFlow">TensorFlow</label>
+                        <input type="checkbox" name="skills" id="TensorFlow">
+
+                        
+
+
+
+
+
+                </div>
+                
+
+
+
+
+
+            </div>
+
+            <div id='profile_links'>
+                <h3>Profile Links</h3>
+                    <label for="link_name1">Name</label>
+                    <input type="text" id="link_name1">
+
+                    <label for="link_name2">link</label>
+                    <input type="text" id="link_name2">
+
+                    <label for="link_name3">Name</label>
+                    <input type="text" id="link_name3">
+
+                    <label for="link_name4">link</label>
+                    <input type="text" id="link_name4">
+
+                    <label for="link_name5">Name</label>
+                    <input type="text" id="link_name5">
+
+                    <label for="link_name6">link</label>
+                    <input type="text" id="link_name6">
+
+                    <label for="link_name7">Name</label>
+                    <input type="text" id="link_name7">
+
+                    <label for="link_name8">link</label>
+                    <input type="text" id="link_name8">
+            </div> -->
+      </form>
     </main>
-
-
-</body>
+  </body>
 </html>
